@@ -4,6 +4,9 @@
 ![Cohere](https://img.shields.io/badge/Cohere-Reranking-green)
 ![Vector%20Search](https://img.shields.io/badge/AI-Semantic%20Search-purple)
 
+[![Back to Main Ecosystem](https://img.shields.io/badge/Back%20to-Main%20Ecosystem-purple?style=for-the-badge)](./README.md)
+
+
 # semantic-ai-recruitment-engine
 
 Semantic AI recruitment engine using Pinecone, OpenAI embeddings, Cohere reranking, and intelligent candidate matching automation.
