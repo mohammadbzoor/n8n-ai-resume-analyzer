@@ -1,6 +1,13 @@
-# n8n-ai-resume-analyzer
+![OpenAI](https://img.shields.io/badge/OpenAI-AI-black)
+![n8n](https://img.shields.io/badge/n8n-Automation-orange)
+![Pinecone](https://img.shields.io/badge/Pinecone-Vector%20Database-blue)
+![Cohere](https://img.shields.io/badge/Cohere-Reranking-green)
+![ATS](https://img.shields.io/badge/ATS-Recruitment-red)
+![AI](https://img.shields.io/badge/AI-Recruitment%20Ecosystem-purple)
 
-AI-powered ATS Resume Analyzer and CV Assistant built with n8n, OpenAI, and PDF processing automation.
+# n8n-ai-recruitment-ecosystem
+
+Advanced AI-powered recruitment ecosystem built with n8n, OpenAI, Pinecone, Cohere, semantic search, ATS resume analysis, and intelligent hiring automation.
 
 Public documentation repository for portfolio and project overview purposes.
 
@@ -8,191 +15,59 @@ Public documentation repository for portfolio and project overview purposes.
 
 # Overview
 
-This project is an intelligent ATS-powered Resume Analysis and CV Assistant system designed to analyze resumes, generate deterministic ATS scores, detect missing keywords, provide actionable recommendations, and assist users with AI-powered CV optimization.
+This project is a complete AI-powered recruitment ecosystem designed to automate resume analysis, ATS scoring, candidate indexing, semantic recruitment search, intelligent candidate ranking, and AI-assisted hiring workflows.
 
-The system was built using:
+The platform combines two integrated AI systems:
+
+1. ATS Resume Analyzer and CV Assistant
+2. AI Recruitment Search and Candidate Matching Engine
+
+The ecosystem was built using:
 - n8n
 - OpenAI
+- Pinecone Vector Database
+- Cohere Reranking
 - PDF processing automation
-- Deterministic ATS scoring logic
-- Structured JSON response pipelines
-
----
-
-# Features
-
-## ATS Resume Analysis
-- Deterministic ATS scoring
-- ATS compatibility evaluation
-- Resume strengths & weaknesses analysis
-- Missing keyword detection
-- Structured JSON outputs
-- Resume quality assessment
-
-## AI CV Assistant
-- Resume rewriting
-- Resume improvement suggestions
-- ATS explanation assistant
-- Resume-focused Q&A
-- Section rewriting
-- Professional optimization suggestions
-
-## File Processing
-- PDF upload validation
-- PDF text extraction
-- Resume cleaning & normalization
-- CV hashing & preprocessing
-
----
-
-# System Architecture
-
-<img width="1392" height="424" alt="image" src="https://github.com/user-attachments/assets/06a00cd7-64f3-40cc-ac6f-78c3b2ddc03e" />
-
-The workflow processes uploaded resumes through multiple AI-powered stages:
-1. PDF validation
-2. Text extraction
-3. Resume normalization
-4. ATS analysis
-5. AI optimization
-6. Structured JSON response generation
-
----
-
-# Main Workflow
-
-![Workflow](screenshots/workflow-overview.png)
-
-The ATS pipeline is fully automated using n8n workflows and OpenAI models.
-
-Core workflow components:
-- Webhook processing
-- PDF extraction
-- CV cleaning
-- ATS scoring
-- AI assistant handling
-- Response formatting
-
----
-
-# ATS Analysis Example
-
-![ATS Analysis](screenshots/ats-analysis.png)
-
-The system generates:
-- ATS score
-- ATS level
-- Resume strengths
-- Resume weaknesses
-- Missing keywords
-- Actionable recommendations
-
----
-
-# AI CV Assistant
-
-![CV Assistant](screenshots/cv-assistant.png)
-
-The AI assistant supports:
-- Resume improvement
-- Resume rewriting
-- ATS explanation
-- Resume-focused conversations
-- Structured JSON responses
-
----
-
-# JSON Response Example
-
-![JSON Response](screenshots/json-response.png)
-
-The platform returns machine-readable structured responses for frontend integrations and automation systems.
-
----
-
-# Technologies Used
-
-## Automation
-- n8n
-
-## AI
-- OpenAI GPT-4o
-- OpenAI GPT-5.4-mini
-
-## Processing
-- PDF extraction
-- JavaScript preprocessing
+- Semantic vector retrieval
 - Deterministic ATS scoring
 
-## Infrastructure
-- Webhooks
-- JSON APIs
-- Structured workflow pipelines
+---
+
+# AI Recruitment Ecosystem Architecture
+
+<img width="1392" height="424" alt="AI Recruitment Ecosystem Architecture" src="https://github.com/user-attachments/assets/06a00cd7-64f3-40cc-ac6f-78c3b2ddc03e" />
+
+The platform automates the complete recruitment lifecycle including:
+- Resume uploads
+- ATS analysis
+- Resume optimization
+- Candidate indexing
+- Vector embeddings generation
+- Semantic candidate search
+- AI-assisted recruitment
+- Intelligent candidate ranking
 
 ---
 
-# Workflow Components
+# System Flow
 
-## Resume Processing Pipeline
-- Validate Uploaded File
-- Extract PDF Text
-- Clean CV Text
-- Generate CV Hash
-
-## ATS Analysis Engine
-- CV Analysis AI
-- Deterministic Scoring
-- Resume Evaluation
-
-## AI Assistant Engine
-- Resume Q&A
-- Resume Rewrite
-- ATS Explanation
-- Resume Improvements
-
----
-
-# Project Goals
-
-This project was designed to:
-- Simulate real ATS systems
-- Provide deterministic resume scoring
-- Improve resume quality automatically
-- Build AI-powered resume automation
-- Deliver structured ATS analysis
-- Support intelligent resume optimization
-
----
-
-# Future Improvements
-
-Planned features:
-- Multi-language resume analysis
-- Job description matching
-- LinkedIn integration
-- Resume benchmarking
-- AI cover letter generation
-- Advanced ATS simulation
-- Recruiter scoring models
-
----
-
-# Security & Validation
-
-Implemented protections:
-- PDF-only validation
-- Structured JSON enforcement
-- CV-only assistant restrictions
-- Deterministic scoring rules
-- Hallucination prevention
-- Invalid request rejection
-
----
-
-# Repository Structure
-
-```bash
-screenshots/
-docs/
-README.md
-.env.example
+```text
+Candidate Uploads Resume
+          ↓
+PDF Validation and Extraction
+          ↓
+ATS Resume Analysis
+          ↓
+Resume Optimization AI
+          ↓
+Candidate Database
+          ↓
+Vector Embeddings Generation
+          ↓
+Pinecone Vector Storage
+          ↓
+Semantic Recruitment Search
+          ↓
+AI Recruitment Assistant
+          ↓
+Candidate Ranking and Matching
