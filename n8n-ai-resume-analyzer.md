@@ -6,29 +6,7 @@
 
 [![Back to Main Ecosystem](https://img.shields.io/badge/Back%20to-Main%20Ecosystem-purple?style=for-the-badge)](./README.md)
 
-# n8n-ai-resume-analyzer
-
-AI-powered ATS Resume Analyzer and CV Assistant built with n8n, OpenAI, and PDF processing automation.
-
-Public documentation repository for portfolio and project overview purposes.
-
----
-
-# Overview
-
-This project is an intelligent ATS-powered Resume Analysis and CV Assistant system designed to analyze resumes, generate deterministic ATS scores, detect missing keywords, provide actionable recommendations, and assist users with AI-powered CV optimization.
-
-Core capabilities include:
-- ATS resume analysis
-- Resume optimization
-- AI-powered CV assistance
-- Deterministic ATS scoring
-- Structured JSON responses
-- Resume preprocessing pipelines
-
----
-
-# ATS Resume Analysis Architecture
+#ATS Resume Analysis Architecture
 
 <img width="1390" height="431" alt="ATS Resume Analysis Architecture" src="https://github.com/user-attachments/assets/a93113da-f002-490e-ae8d-eedee18a17c0" />
 
@@ -36,21 +14,100 @@ This architecture represents the candidate-side AI ecosystem responsible for res
 
 ---
 
-# How It Works
+# Features
 
-```text
-User Uploads Resume
-        ↓
-Webhook Receives Request
-        ↓
-PDF File Validation
-        ↓
-Resume Text Extraction
-        ↓
-CV Cleaning and Normalization
-        ↓
-ATS Analysis AI
-        ↓
-AI Resume Assistant
-        ↓
-Structured JSON Response
+## ATS Analysis
+
+- Deterministic ATS scoring
+- ATS compatibility evaluation
+- Resume strengths and weaknesses analysis
+- Missing keyword detection
+- Structured JSON outputs
+- Resume quality assessment
+
+## AI CV Assistant
+
+- Resume rewriting
+- Resume improvement suggestions
+- ATS explanation assistant
+- Resume-focused Q&A
+- Section rewriting
+- Professional optimization suggestions
+
+## Resume Processing
+
+- PDF upload validation
+- PDF text extraction
+- Resume cleaning and normalization
+- CV hashing and preprocessing
+
+---
+
+# Technologies Used
+
+## Automation
+
+- n8n
+
+## AI
+
+- OpenAI GPT-4o
+- OpenAI GPT-5.4-mini
+
+## Processing
+
+- PDF extraction
+- JavaScript preprocessing
+- Deterministic ATS scoring
+
+## Infrastructure
+
+- Webhooks
+- JSON APIs
+- Structured workflow pipelines
+
+---
+
+# ATS Analysis Example
+
+<img width="763" height="681" alt="ATS Analysis Example" src="https://github.com/user-attachments/assets/c572895b-a1d3-477d-ad31-5c64ed88a9ed" />
+
+The ATS engine generates:
+- ATS score
+- ATS level
+- Resume strengths
+- Resume weaknesses
+- Missing keywords
+- Actionable recommendations
+
+---
+
+# Example JSON Output
+
+```json
+{
+  "success": true,
+  "userId": 139,
+  "chatId": 35,
+  "cvId": 35,
+  "atsScore": 78,
+  "atsLevel": "Good",
+  "status": "Good",
+  "summary": "Backend Software Developer with 2 years of experience in building scalable server-side systems and integrating AI solutions.",
+  "strengths": [
+    "Strong technical skills in multiple programming languages and frameworks",
+    "Experience with AI integration and scalable system development",
+    "Active involvement in technical content creation and leadership roles"
+  ],
+  "weaknesses": [
+    "Lack of measurable achievements in professional experience",
+    "Projects lack specific outcomes or metrics",
+    "Formatting could be improved for better readability"
+  ],
+  "recommendations": [
+    "Add measurable achievements to the professional experience section, such as performance improvements, efficiency gains, or completed project impact.",
+    "Include specific outcomes for projects to demonstrate business or technical value.",
+    "Improve formatting consistency by using clear section headings, aligned dates, and concise bullet points."
+  ],
+  "isAnalyzed": true
+}
