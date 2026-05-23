@@ -12,6 +12,8 @@ Core capabilities include:
 - Structured JSON responses
 - Resume preprocessing pipelines
 
+[![View ATS Resume Analyzer Documentation](https://img.shields.io/badge/View%20Documentation-ATS%20Resume%20Analyzer-blue?style=for-the-badge)](./n8n-ai-resume-analyzer.md)
+
 ---
 
 # AI Recruitment Engine Architecture
@@ -28,3 +30,5 @@ Core capabilities include:
 - Cohere reranking
 - Intelligent recruitment assistance
 - AI-powered candidate matching
+
+[![View Recruitment Engine Documentation](https://img.shields.io/badge/View%20Documentation-Recruitment%20Engine-green?style=for-the-badge)](./semantic-ai-recruitment-engine.md)
