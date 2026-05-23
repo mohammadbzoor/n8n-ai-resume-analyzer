@@ -47,7 +47,7 @@ The system was built using:
 
 # System Architecture
 
-![Architecture](screenshots/architecture-overview.png)
+<img width="1392" height="424" alt="image" src="https://github.com/user-attachments/assets/06a00cd7-64f3-40cc-ac6f-78c3b2ddc03e" />
 
 The workflow processes uploaded resumes through multiple AI-powered stages:
 1. PDF validation
